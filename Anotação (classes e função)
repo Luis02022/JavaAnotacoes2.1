@@ -1,0 +1,137 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.atividade10;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Clientes {
+
+     private String nome;
+     private int idade;
+     
+     // Construtor
+    public Clientes(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+    
+    //Acessores
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+        
+}
+
+
+________________________________________________________________________________________________
+
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.atividade10;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Funcionarios {
+    private String nome;
+    private String funcao;
+    private double salario;
+
+    public Funcionarios(String nome, String funcao, double salario) {
+        this.nome = nome;
+        this.funcao = funcao;
+        this.salario = salario;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getFuncao() {
+        return funcao;
+    }
+
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+____________________________________________________________________________________________
+
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.atividade10;
+
+/**
+ *
+ * @author aluno.den
+ */
+public class Atividade10 {
+
+    public static void main(String[] args) {
+        Clientes cliente = new Clientes("Marta", 20);
+        Funcionarios funcionario = new Funcionarios("Luis", "Punheteiro", 3000);
+       // cliente.nome = "Marta";
+       // cliente.idade = 20;
+       
+       // cliente.setNome("Luis");
+       // cliente.setIdade(20);
+       
+        System.out.println("Nome: " + cliente.getNome());
+        System.out.println("Idade: " + cliente.getIdade());
+        
+        System.out.println("\n Dados do funcionario:");
+        System.out.println("Nome:" + funcionario.getNome());
+        System.out.println("funcao:" + funcionario.getFuncao());
+        System.out.println("salario:" + funcionario.getSalario());
+    }
+}
